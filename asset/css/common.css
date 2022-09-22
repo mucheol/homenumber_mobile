@@ -150,7 +150,7 @@ input[type=text]::placeholder {font-size: 16px;line-height: 40px;color: #DBDBDB;
 .head .logoBox img{width: 100%;}
 
 /* Login */
-#login{
+#login{ 
   padding-top: 50px;}
 #login .title {font-weight: 100;font-size: 28px;line-height: 38px;}
 #login .login_idBox{margin-top: 24px;}

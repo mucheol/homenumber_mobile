@@ -19,6 +19,6 @@ $(document).ready(function(){
       $('.check_fake').addClass('active')
     }else {
       $('.check_fake').removeClass('active')
-    }
+    } 
   })
 });
