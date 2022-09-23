@@ -150,16 +150,18 @@ input[type=text]:focus,input[type=password]:focus{outline: none;}
 .head {width: 100%;height: 48px;}
 .head .logoBox {display: flex;align-items: center;width: 64px;height: 48px;}
 .head .logoBox img{width: 100%;}
+.head .logoBox img.previousIcon{width: 16px;}
+.head .logoBox .headTitle{font-size: 16px; margin-left: 8px; line-height: 22px;}
 .xIcon {position: absolute; top: 50%; right: 12px; transform: translate(-50%,-50%); cursor: pointer;display: none;}
 
 .title {font-weight: 100;font-size: 28px;line-height: 38px;}
 .login_idBox{margin-top: 24px;}
 .errMsgBox{font-size: 12px; line-height: 16px;color: #FF3210;margin-top: 7px; visibility: hidden;}
-.save_idBox{margin-top: 9px;font-size: 16px;line-height: 22px;margin-bottom: 24px;}
-.save_idBox::after{clear: both;}
-.save_idBox input {display: none;}
-.save_idBox .check_fake{position: relative;display: block;width: 16px;height: 16px;background-image: url('../images/check_no.png');background-size: cover;float: left;margin-right: 15px;top: 2px;}
-.save_idBox .check_fake.active{background-image: url('../images/check_on.png');}
+.check_fake{position: relative;display: block;width: 16px;height: 16px;background-image: url('../images/check_no.png');background-size: cover;float: left;margin-right: 15px;top: 2px;}
+.fakeBox{margin-top: 9px;font-size: 16px;line-height: 22px;margin-bottom: 24px;}
+.fakeBox::after{clear: both;}
+.fakeBox input {display: none;}
+.check_fake.active{background-image: url('../images/check_on.png');}
 .phone_certiBox {display: flex;}
 .phone_certiBox input{width: calc(100% - 131px);}
 .certiNumBtn {width: 118px !important;height: 40px;margin-left: 13px;background: #DBDBDB;font-size: 16px;line-height: 22px;color: #FFFFFF;}
@@ -168,6 +170,8 @@ input[type=submit] {width: 100%;height: 48px;background-color: #FF3210;box-shado
 .resetPwLink a{color: #2BB2FF;margin-left: 5px;}
 .signOutLink {font-size: 12px;line-height: 16px;text-align: center;color: #191919;margin-top: 63px;}
 .signOutLink a{font-weight: 600;margin-left: 6px;}
+textarea {width: 100%; height: 72px;padding: 8px 4px 6px 8px;}
+.essential {font-size: 12px;line-height: 16px;color: #FF3210;}
 
 /* Login */
 #login{ padding-top: 50px;}
@@ -187,4 +191,31 @@ input[type=submit] {width: 100%;height: 48px;background-color: #FF3210;box-shado
   left: 50%;
   bottom: 16px;
   transform: translate(-50%,-50%);
+}
+
+/* signup TOS */
+#signupTOS{
+  margin-top: 48px;
+}
+#signupTOS .logoBox {
+  width: 100%;
+  text-align: center;
+}
+#signupTOS .logoBox img{
+  width: 129px;
+}
+#signupTOS .fakeBox {
+  margin-bottom: 8px;
+}
+#signupTOS .tosBox:nth-child(2) {
+  margin-top: 48px;
+}
+#signupTOS .tosBox:nth-child(3) {
+  margin-top: 40px;
+}
+#signupTOS .tosBox:nth-child(5) {
+  margin-top: 38px;
+}
+#signupTOS input[type=submit] {
+  margin-top: 32px;
 }

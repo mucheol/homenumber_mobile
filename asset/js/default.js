@@ -13,12 +13,12 @@ $(function(){
 });
 
 $(document).ready(function(){
-  $('#save_id').change(function(){
+  $('.check').on('click change',function(){
 
-    if($('#save_id').is(":checked")) {
-      $('.check_fake').addClass('active')
+    if($(this).is(":checked")) {
+      $(this).siblings('.checkLabel').children('.check_fake').addClass('active')
     }else {
-      $('.check_fake').removeClass('active')
+      $(this).siblings('.checkLabel').children('.check_fake').removeClass('active')
     } 
   });
 
