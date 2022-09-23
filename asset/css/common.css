@@ -32,7 +32,7 @@
 /* reset */
 html, body {position:relative; -webkit-font-smoothing:antialiased;height:100%}
 html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, button, address, em, img, small, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, hr {margin:0; padding:0;box-sizing:border-box;}
-body {padding:0; background:#fff; font-family:'Roboto', 'notoSans', sans-serif;font-size:13px;font-weight:400;color:#000;box-sizing:border-box;line-height:1.2;letter-spacing:-0.025em;word-break: keep-all;}
+body {padding:0; background:#fff; font-family: 'notoSans', sans-serif;font-size:13px;font-weight:400;color:#000;box-sizing:border-box;line-height:1.2;letter-spacing:-0.025em;word-break: keep-all;}
 h1, h2, h3, h4, h5, h6 {font-weight:normal}
 ol, ul, li {list-style:none}
 table {width:100%; border-collapse:separate; border-spacing:0}
@@ -45,7 +45,7 @@ strong{font-weight:normal;}
 caption, legend {width:0; height:0; margin:0; padding:0; text-indent:-9999em; overflow:hidden; font-size:0;}
 .blind {position:absolute !important; left:-9999em; width:0; height:0; margin:0; padding:0; text-indent:-9999em; overflow:hidden; font-size:0; line-height:0;}
 header, footer, section, article, aside, nav, hgroup, details, menu, figure, figcaption {display:block;box-sizing:border-box;}
-input, textarea, select {margin:0; padding:0; font-family:'Roboto', 'notoSans', sans-serif; font-size:13px;  color:#000; vertical-align:middle;box-sizing:border-box;}
+input, textarea, select {margin:0; padding:0; font-family:'notoSans', sans-serif; font-size:13px;  color:#000; vertical-align:middle;box-sizing:border-box;}
 select{appearance:none;-webkit-appearance:none;-moz-appearance:none;}
 select::-ms-expand {display:none}
 textarea {border: 1px solid #000; resize:none; overflow-y:auto}
@@ -139,8 +139,10 @@ input:-webkit-autofill{-webkit-box-shadow:0 0 0px 1000px white inset;}
 .fontB{font-weight:700 !important}
 
 /* Input */
-input[type=text] {width: 100%;height: 40px;background-color: #F9F9F9;border: none; margin-top: 8px;}
-input[type=text]::placeholder {font-size: 16px;line-height: 40px;color: #DBDBDB;padding-left: 7px;}
+input[type=text],input[type=password] {width: 100%;height: 40px;background-color: #F9F9F9;border: none; padding-left: 7px;font-size: 16px;line-height: 40px}
+input[type=text]::placeholder,input[type=password]::placeholder {font-size: 16px;line-height: 40px;color: #DBDBDB;}
+input[type=text]:focus,input[type=password]:focus{outline: none;}
+.inputBox {position: relative; margin-top: 8px;}
 
 /* COMMON */
 .wrap {width: 100vw;}
@@ -148,34 +150,41 @@ input[type=text]::placeholder {font-size: 16px;line-height: 40px;color: #DBDBDB;
 .head {width: 100%;height: 48px;}
 .head .logoBox {display: flex;align-items: center;width: 64px;height: 48px;}
 .head .logoBox img{width: 100%;}
+.xIcon {position: absolute; top: 50%; right: 12px; transform: translate(-50%,-50%); cursor: pointer;display: none;}
+
+.title {font-weight: 100;font-size: 28px;line-height: 38px;}
+.login_idBox{margin-top: 24px;}
+.errMsgBox{font-size: 12px; line-height: 16px;color: #FF3210;margin-top: 7px; visibility: hidden;}
+.save_idBox{margin-top: 9px;font-size: 16px;line-height: 22px;margin-bottom: 24px;}
+.save_idBox::after{clear: both;}
+.save_idBox input {display: none;}
+.save_idBox .check_fake{position: relative;display: block;width: 16px;height: 16px;background-image: url('../images/check_no.png');background-size: cover;float: left;margin-right: 15px;top: 2px;}
+.save_idBox .check_fake.active{background-image: url('../images/check_on.png');}
+.phone_certiBox {display: flex;}
+.phone_certiBox input{width: calc(100% - 131px);}
+.certiNumBtn {width: 118px !important;height: 40px;margin-left: 13px;background: #DBDBDB;font-size: 16px;line-height: 22px;color: #FFFFFF;}
+input[type=submit] {width: 100%;height: 48px;background-color: #FF3210;box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);font-weight: 400;font-size: 16px;line-height: 22px;color: #FFFFFF;border: none;margin-top: 22px;}
+.resetPwLink {font-size: 12px;line-height: 16px;color: #191919;margin-top: 10px;text-align: center;}
+.resetPwLink a{color: #2BB2FF;margin-left: 5px;}
+.signOutLink {font-size: 12px;line-height: 16px;text-align: center;color: #191919;margin-top: 63px;}
+.signOutLink a{font-weight: 600;margin-left: 6px;}
 
 /* Login */
-#login{ 
-  padding-top: 50px;}
-#login .title {font-weight: 100;font-size: 28px;line-height: 38px;}
-#login .login_idBox{margin-top: 24px;}
-#login .save_idBox{margin-top: 18px;font-size: 16px;line-height: 22px;}
-#login .save_idBox::after{clear: both;}
-#login .save_idBox input {display: none;}
-#login .save_idBox .check_fake{
-  position: relative;
-  display: block;
-  width: 16px;
-  height: 16px;
-  background-image: url('../images/check_no.png');
-  background-size: cover;
-  float: left;
-  margin-right: 15px;
-  top: 2px;
+#login{ padding-top: 50px;}
+
+/* Reset Password */
+#resetPw {
+  margin-top: 85px;
 }
-#login .save_idBox .check_fake.active{
-  background-image: url('../images/check_on.png');
+#resetPw .title{
+  margin-bottom: 53px;
 }
-#login .phone_certiBox {display: flex;}
-#login .phone_certiBox input{width: calc(100% - 131px);}
-#login .certiNumBtn {width: 118px !important;height: 40px;margin-top: 8px;margin-left: 13px;background: #DBDBDB;font-size: 16px;line-height: 22px;color: #FFFFFF;}
-#login input[type=submit] {width: 100%;height: 48px;background-color: #FF3210;box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);font-weight: 400;font-size: 16px;line-height: 22px;color: #FFFFFF;border: none;margin-top: 22px;}
-#login .resetPwLink {font-size: 12px;line-height: 16px;color: #191919;margin-top: 10px;text-align: center;}
-#login .resetPwLink a{color: #2BB2FF;margin-left: 5px;}
-#login .signOutLink {font-size: 12px;line-height: 16px;text-align: center;color: #191919;margin-top: 63px;}
-#login .signOutLink a{font-weight: 600;margin-left: 6px;}
+#resetPw input[type=submit]{
+  margin-top: 58px;
+}
+#resetPw .signOutLink{
+  position: absolute;
+  left: 50%;
+  bottom: 16px;
+  transform: translate(-50%,-50%);
+}

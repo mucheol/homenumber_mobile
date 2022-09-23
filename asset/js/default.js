@@ -20,5 +20,17 @@ $(document).ready(function(){
     }else {
       $('.check_fake').removeClass('active')
     } 
+  });
+
+  $('.inputBox').on('change keyup',function(){
+    if($(this).children('input').val() != '') {
+      $(this).children('.xIcon').css('display','block')
+    }
+  })
+  
+
+  $('.xIcon').on('click',function(){
+    var input = $(this).siblings('input');
+    input.val('');
   })
 });
