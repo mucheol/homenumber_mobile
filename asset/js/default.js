@@ -1,15 +1,28 @@
-// function checkBoxUI() {
-// 	var el;
+function receiptUI() {
+	var el;
 
-// 	el = $('.tabsGroup');
+	el = $('#receipt');
 
-// 	if(el.length <= 0){
-// 		return;
-// 	}
-// }
+	if(el.length <= 0){
+		return;
+	}
+  $('.tabMenu p').on('click',function(){
+    $(this).siblings('p').removeClass('active')
+    $(this).addClass('active')
+    if($('.tabBtn01').hasClass('active')) {
+      $('.tab02').removeClass('active');
+      $('.tab01').addClass('active');
+    } 
+    if($('.tabBtn02').hasClass('active')) {
+      $('.tab01').removeClass('active');
+      $('.tab02').addClass('active');
+    }
+    
+  })
+}
 
 $(function(){
-	// checkBoxUI();
+	receiptUI();
 });
 
 $(document).ready(function(){
@@ -28,9 +41,11 @@ $(document).ready(function(){
     }
   })
   
-
   $('.xIcon').on('click',function(){
     var input = $(this).siblings('input');
     input.val('');
   })
+
+  
+  
 });

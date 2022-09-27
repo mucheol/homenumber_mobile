@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME NUMBER META</title>
+  <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+<body>
+   <div class="wrap">
+    <div class="wrap_inner">
+      <div class="head">
+        <div class="logoBox">
+          <a href=""><img src="../asset/images/previousPage_icon.png" alt="" class="previousIcon"></a>
+          <p class="headTitle">접수</p>
+        </div>
+      </div>
+      <div class="mainCon" id="receipt">
+        <div class="miniNav flexBox">
+          <a href=""><p class="active">접수</p></a>
+          <a href=""><p>조회</p></a>
+          <a href=""><p>마이페이지</p></a>
+        </div>
+        <form action="">
+          <div class="selectCourier">
+            <p class="title">원하시는 택배사를 선택하세요<img src="../asset/images/courier_icon.png" alt=""> </p>
+            <div class="selectBox">
+              <select name="" id="">
+                <option value="CJ대한통운">CJ대한통운</option>
+                <option value="롯데택배">롯데택배</option>
+                <option value="한진택배">한진택배</option>
+                <option value="로젠택배">로젠택배</option>
+                <option value="우체국택배">우체국택배</option>
+              </select>
+              <img src="../asset/images/select_arrow.png" alt="">
+            </div>
+          </div>
+          <div class="tabBox">
+            <div class="tabMenu flexBox">
+              <p class="tabBtn01 active">홈넘버 입력</p>
+              <p class="tabBtn02">직접 입력</p>
+            </div>
+            <div class="tab01 tab active">
+              <p class="p1">패드를 눌러 홈넘버를 입력 해주세요</p>
+              <div class="numPad">
+                <div class="homenumberBox">
+                  <input type="text" readonly>
+                </div>
+                <div class="padInner">
+                  <div class="num">
+                    <div class="item">
+                      <p>1</p>
+                      <p>A B C</p>
+                    </div>
+                    <div class="item">
+                      <p>2</p>
+                      <p>A B C</p>
+                    </div>
+                    <div class="item">
+                      <p>3</p>
+                      <p>D E F</p>
+                    </div>
+                    <div class="item">
+                      <p>4</p>
+                      <p>G H I</p>
+                    </div>
+                    <div class="item">
+                      <p>5</p>
+                      <p>J K L</p>
+                    </div>
+                    <div class="item">
+                      <p>6</p>
+                      <p>M N O</p>
+                    </div>
+                    <div class="item">
+                      <p>7</p>
+                      <p>P Q R S</p>
+                    </div>
+                    <div class="item">
+                      <p>8</p>
+                      <p>T U V</p>
+                    </div>
+                    <div class="item">
+                      <p>9</p>
+                      <p>W X Y Z</p>
+                    </div>
+                    <div class="item">
+                      <p>C</p>
+                      <p>&nbsp;</p>
+                    </div>
+                    <div class="item">
+                      <p>0</p>
+                      <p>+</p>
+                    </div>
+                    <div class="item">
+                      <img src="../asset/images/delete_icon.png" alt="">
+                      <p>&nbsp;</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab02 tab">
+              <p class="p1">정보를 입력 해주세요</p>
+              <div class="info">
+                <div class="item">
+                  <p>수하인</p>
+                  <input type="text" placeholder="15자 이내로 입력해주세요">
+                </div>
+                <div class="item item02">
+                  <p>연락처</p>
+                  <div class="flexBox">
+                    <div class="selectBox">
+                      <select name="" id="">
+                        <option value="010">010</option>
+                        <option value="011">011</option>
+                        <option value="012">012</option>
+                      </select>
+                      <img src="../asset/images/select_arrow.png" alt="">
+                    </div>
+                    <input type="number">
+                    <input type="number">
+                  </div>
+                </div>
+                <div class="item item03">
+                  <p>주소</p>
+                  <div class="flexBox">
+                    <input type="text">
+                    <p> - </p>
+                    <input type="text">
+                    <button>주소검색</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <p>상세주소</p>
+                  <input type="text" placeholder="상세 주소를 입력해주세요">
+                </div>
+              </div>
+            </div>
+
+            <div class="receiptBoxType">
+              <p class="p3">박스유형</p>
+              <div class="selectBox">
+                <select name="" id="">
+                  <option value="극소">극소</option>
+                  <option value="소">소</option>
+                  <option value="중">중</option>
+                  <option value="대">대</option>
+                  <option value="특대">특대</option>
+                </select>
+                <img src="../asset/images/select_arrow.png" alt="">
+              </div>
+            </div>
+            <div class="receiptGoods">
+              <p class="p3">상품명</p>
+              <div class="receiptInput flexBox">
+                <input type="text" placeholder="상품명을 적어주세요">
+              </div>
+            </div>
+            <div class="receiptPrice">
+              <p class="p3">물품가액</p>
+              <div class="receiptInput flexBox">
+                <input type="text">
+                <p>원</p>
+              </div>
+            </div>
+            <div class="receiptBoxAmount">
+              <p class="p3">박스 수량</p>
+              <div class="receiptInput flexBox">
+                <input type="number" value="0" min="0" readonly>
+                <button class="minusBtn"><img src="../asset/images/minus_icon.png" alt=""></button>
+                <button class="plusBtn"><img src="../asset/images/plus_icon.png" alt=""></button>
+              </div>
+            </div>
+            <div class="receiptMessage">
+              <p class="p3">배송메시지</p>
+              <textarea name="" id="" cols="30" rows="10"></textarea>
+            </div>
+            <div class="submitBtnBox flexBox">
+              <button class="submitBtn01">출력</button>
+              <button class="submitBtn02">접수</button>
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+   </div>
+   <script src="../asset/js/jquery-1.11.3.min.js"></script>
+   <script src="../asset/js/default.js"></script>
+</body>
+</html>

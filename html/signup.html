@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME NUMBER META</title>
+  <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+<body>
+   <div class="wrap">
+    <div class="wrap_inner">
+      <div class="head">
+        <div class="logoBox">
+          <img src="../asset/images/previousPage_icon.png" alt="" class="previousIcon">
+          <p class="headTitle">회원가입</p>
+        </div>
+      </div>
+      <div class="mainCon" id="signup">
+        <form action="">
+          <div class="logoBox">
+            <img src="../asset/images/logo02.png" alt="">
+          </div>
+          <div class="signup_idBox inputBox"> 
+            <p>아이디</p>
+            <input type="text" placeholder="아이디를 입력해주세요">
+            <div class="passMsgBox">
+              <p>사용가능한 아이디입니다.</p>
+            </div>
+            <div class="errMsgBox">
+              <p>이미 사용중이거나 탈퇴한 아이디입니다.</p>
+            </div>
+          </div>
+          <div class="signup_pwBox inputBox"> 
+            <p>비밀번호</p>
+            <input type="password" placeholder="비밀번호를 입력해주세요">
+            <div class="passMsgBox">
+              <p>사용가능한 비밀번호입니다.</p>
+            </div>
+            <div class="errMsgBox">
+              <p>8~16 자 영문 대 소문자, 숫자, 특수문자를 사용하세요.</p>
+            </div>
+          </div>
+          <div class="signup_pwChkBox inputBox"> 
+            <p>비밀번호 재확인</p>
+            <input type="password" placeholder="비밀번호를 입력해주세요">
+            <div class="passMsgBox">
+              <p>사용가능한 비밀번호입니다.</p>
+            </div>
+            <div class="errMsgBox">
+              <p>비밀번호가 일치하지 않습니다.</p>
+            </div>
+          </div>
+          <div class="signup_CRMBox inputBox"> 
+            <p class="mt50">사업자 등록 번호</p>
+            <input type="text" placeholder="숫자만 입력해주세요(‘-’제외)">
+            <div class="errMsgBox">
+              <p>필수 정보입니다.</p>
+            </div>
+          </div>
+          <div class="signup_emailBox inputBox"> 
+            <p>본인 확인 이메일</p>
+            <input type="text" placeholder="선택 입력">
+            <div class="passMsgBox">
+              <p>사용가능한 이메일 입니다.</p>
+            </div>
+            <div class="errMsgBox">
+              <p>이메일 주소를 다시 확인해주세요.</p>
+            </div>
+          </div>
+          <div class="signup_phoneBox inputBox "> 
+            <p class="mt50">휴대전화</p>
+            <div class="phone_certiBox">
+              <input type="text" placeholder="숫자만 입력해주세요(‘-’제외)">
+              <button class="certiNumBtn">인증번호 받기</button>
+            </div>
+            <input type="text" placeholder="인증번호를 입력하세요">
+            <div class="passMsgBox">
+              <p>인증번호를 다시 확인해주세요</p>
+            </div>
+            <div class="errMsgBox">
+              <p>인증되었습니다</p>
+            </div>
+            <div class="signup_businessNameBox inputBox"> 
+              <p class="mt40">상호명</p>
+              <input type="text" placeholder="상호명을 입력해주세요">
+            </div>
+            <div class="signup_telNumBox inputBox mt10"> 
+              <p>전화 번호</p>
+              <input type="text" placeholder="번호만 입력해주세요(‘-’제외)">
+            </div>
+            <div class="signup_addressBox inputBox mt10"> 
+              <p>주소</p>
+              <div class="flexBox">
+                <input type="text" placeholder="우편번호를 입력해주세요">
+                <button class="certiNumBtn">우편번호</button>
+              </div>
+              <input type="text" placeholder="주소를 입력해주세요">
+              <div class="flexBox">
+                <input type="text" placeholder="상세주소를 입력해주세요">
+                <button class="certiNumBtn">참고항목</button>
+              </div>
+            </div>
+            
+          </div>
+          <input type="submit" value="가입요청">
+        </form>
+      </div>
+    </div>
+   </div>
+   <script src="../asset/js/jquery-1.11.3.min.js"></script>
+   <script src="../asset/js/default.js"></script>
+</body>
+</html>
