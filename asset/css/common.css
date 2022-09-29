@@ -152,6 +152,11 @@ select{  width: 100%;  height: 100%;  padding-left: 5px;  color: #6B6B6B;  backg
 select option {  color: #000;  background-color: #fff;}
 select option::-ms-check {  color: #fff;  background-color: #000;}
 
+.link a {
+  margin: 50px;
+  line-height: 30px;
+}
+
 /* COMMON */
 .wrap {width: 100vw;}
 .wrap_inner {width: 87vw;min-width: 328px;margin: 0 auto;padding-bottom: 16px;}
