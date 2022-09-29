@@ -59,5 +59,39 @@ $(document).ready(function(){
     $('button.addressSearch').addClass('active')
   })
   
+  // 회원정보 수정
+  $('#mypageInfo p.editBtn').on('click',function(){
+    $('#mypageInfo input').val('');
+    $('#mypageInfo input').attr('readonly',false);
+    
+    $('.editBtn').css('display','none')
+    $('.editEndBtn').css('display','flex')
+  })
+  $('#mypageInfo p.editEndBtn').on('click',function(){
+    $('#mypageInfo input').attr('readonly',true);
+    
+    $('.editEndBtn').css('display','none')
+    $('.editBtn').css('display','flex')
+  })
   
+  // 마이페이지 택배사관리 셀렉트에따라 내용변환
+  $('.courierInfo .info01').css('display','block')
+  $('#selectCourier').on('change',function(){
+    if($('#selectCourier').val() == 'CJ 대한통운') {
+      $('.courierInfo .information').css('display','none')
+      $('.courierInfo .info01').css('display','block')
+    }else if($('#selectCourier').val() == '롯데택배') {
+      $('.courierInfo .information').css('display','none')
+      $('.courierInfo .info02').css('display','block')
+    }else if($('#selectCourier').val() == '한진택배') {
+      $('.courierInfo .information').css('display','none')
+      $('.courierInfo .info03').css('display','block')
+    }else if($('#selectCourier').val() == '로젠택배') {
+      $('.courierInfo .information').css('display','none')
+      $('.courierInfo .info04').css('display','block')
+    }else if($('#selectCourier').val() == '우체국택배') {
+      $('.courierInfo .information').css('display','none')
+      $('.courierInfo .info05').css('display','block')
+    }
+  })
 });

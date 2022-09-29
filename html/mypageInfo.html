@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME NUMBER META</title>
+  <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+<body>
+   <div class="wrap">
+    <div class="wrap_inner">
+      <div class="head">
+        <div class="logoBox">
+          <a href=""><img src="../asset/images/previousPage_icon.png" alt="" class="previousIcon"></a>
+          <p class="headTitle">접수</p>
+        </div>
+      </div>
+      <div class="mainCon" id="mypageInfo">
+        <div class="miniNav flexBox">
+          <a href="./receipt.html"><p>접수</p></a>
+          <a href="./lookup.html"><p>조회</p></a>
+          <a href="./mypage.html"><p class="active">마이페이지</p></a>
+        </div>
+        <p class="title">내 정보 조회</p>
+        <p class="subTitle">회원정보</p>
+        <form action="">
+          <div class="col flexBox">
+            <p class="dl">아이디</p>
+              <div class="dr">
+              <input type="text" value="홍길동" placeholder="아이디를 변경해주세요" readonly>
+            </div>
+          </div>
+          <div class="col flexBox">
+            <p class="dl">인증 휴대폰번호</p>
+              <div class="dr">
+              <input type="text" value="010-****-****" placeholder="번호를 변경해주세요 (‘-’) 재외" readonly>
+            </div>
+          </div>
+          <div class="col flexBox">
+            <p class="dl">사업자 등록 번호</p>
+              <div class="dr">
+              <input type="text" value="***-**-*****" placeholder="번호를 변경해주세요 (‘-’) 제외" readonly>
+            </div>
+          </div>
+          <div class="col flexBox">
+            <p class="dl">이메일</p>
+              <div class="dr">
+              <input type="text" value="홍길동@****.com" placeholder="이메일을 변경해주세요" readonly>
+            </div>
+          </div>
+          <div class="col flexBox mt90">
+            <p class="dl">상호명</p>
+              <div class="dr">
+              <input type="text" value="홍길동" placeholder="상호명을 변경해주세요" readonly>
+            </div>
+          </div>
+          <div class="col flexBox">
+            <p class="dl">전화번호</p>
+            <div class="dr">
+              <input type="text" value="010-****-****" placeholder="번호를 변경해주세요 (‘-’) 제외" readonly>
+            </div>
+          </div>
+          <div class="col flexBox">
+            <p class="dl">주소</p>
+            <div class="dr">
+              <input type="text" value="720-*-****" placeholder="우편번호" readonly>
+              <input type="text" value="서울특별시 청담동 ***" placeholder="상세주소를 입력해주세요." readonly class="mt10">
+            </div>
+          </div>
+          <p class="editBtn">수정</p>
+          <p class="editEndBtn">수정완료</p>
+        </form>
+      </div>
+    </div>
+   </div>
+   <script src="../asset/js/jquery-1.11.3.min.js"></script>
+   <script src="../asset/js/default.js"></script>
+</body>
+</html>

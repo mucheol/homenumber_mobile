@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HOME NUMBER META</title>
+  <link rel="stylesheet" href="../asset/css/common.css">
+</head>
+<body>
+   <div class="wrap">
+    <div class="wrap_inner">
+      <div class="head">
+        <div class="logoBox">
+          <a href=""><img src="../asset/images/previousPage_icon.png" alt="" class="previousIcon"></a>
+          <p class="headTitle">접수</p>
+        </div>
+      </div>
+      <div class="mainCon" id="courierManagement">
+        <div class="miniNav flexBox">
+          <a href="./receipt.html"><p>접수</p></a>
+          <a href="./lookup.html"><p>조회</p></a>
+          <a href="./mypage.html"><p class="active">마이페이지</p></a>
+        </div>
+        <p class="title">택배사 관리</p>
+        <div class="selCourier flexBox">
+          <p class="dl">택배사</p>
+          <div class="dr">
+            <div class="selectBox">
+              <select name="selectCourier" id="selectCourier">
+                <option value="CJ 대한통운">CJ 대한통운</option>
+                <option value="롯데택배">롯데택배</option>
+                <option value="한진택배">한진택배</option>
+                <option value="로젠택배">로젠택배</option>
+                <option value="우체국택배">우체국택배</option>
+              </select>
+              <img src="../asset/images/select_arrow.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="courierInfo">
+          <p class="subTitle">택배계약 정보</p>
+          <div class="info01 information">
+            <div class="flexBox">
+              <p class="dl">대한통운 ID</p>
+              <p class="dr">홍길동</p>
+            </div>
+            <div class="flexBox">
+              <p class="dl">운임구분</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info01chk01" name="fare" checked>
+                  <label for="info01chk01">선불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info01chk02" name="fare" >
+                  <label for="info01chk02">신용</label>
+                </div>
+              </div>
+            </div>
+            <div class="flexBox">
+              <p class="dl">택배용지</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info01chk03" name="paper" checked>
+                  <label for="info01chk03">CJ-2P</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info01chk04" name="paper">
+                  <label for="info01chk04">CJ-2P</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info02 information">
+            <div class="flexBox">
+              <p class="dl">계약 ID</p>
+              <p class="dr">홍길동</p>
+            </div>
+            <div class="flexBox">
+              <p class="dl">운임구분</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info02chk01" name="fare" checked>
+                  <label for="info02chk01">선불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info02chk02" name="fare" >
+                  <label for="info02chk02">착불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info02chk03" name="fare" >
+                  <label for="info03chk03">신용</label>
+                </div>
+              </div>
+            </div>
+            <div class="flexBox">
+              <p class="dl">택배용지</p>
+              <div class="dr">
+                표준D
+              </div>
+            </div>
+          </div>
+          <div class="info03 information">
+            <div class="flexBox">
+              <p class="dl">EDI코드</p>
+              <p class="dr">홍길동</p>
+            </div>
+            <div class="flexBox">
+              <p class="dl">운임구분</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info03chk01" name="fare" checked>
+                  <label for="info03chk01">발지신용</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info03chk02" name="fare" >
+                  <label for="info03chk02">착지신용</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info03chk03" name="fare" >
+                  <label for="info03chk03">선불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info03chk04" name="fare" >
+                  <label for="info03chk04">착불</label>
+                </div>
+              </div>
+            </div>
+            <div class="flexBox">
+              <p class="dl">택배용지</p>
+              <div class="dr">
+                NS
+              </div>
+            </div>
+          </div>
+          <div class="info04 information">
+            <div class="flexBox">
+              <p class="dl">계약 ID</p>
+              <p class="dr">홍길동</p>
+            </div>
+            <div class="flexBox">
+              <p class="dl">운임구분</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info04chk01" name="fare" checked>
+                  <label for="info04chk01">선불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info04chk02" name="fare" >
+                  <label for="info04chk02">신용</label>
+                </div>
+              </div>
+            </div>
+            <div class="flexBox">
+              <p class="dl">택배용지</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info04chk03" name="fare" checked>
+                  <label for="info04chk03">감열 A</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info04chk04" name="fare" >
+                  <label for="info04chk04">감열 B</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="info05 information">
+            <div class="flexBox">
+              <p class="dl">계약 ID</p>
+              <p class="dr">홍길동</p>
+            </div>
+            <div class="flexBox">
+              <p class="dl">운임구분</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info05chk01" name="fare" checked>
+                  <label for="info05chk01">착불</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info05chk02" name="fare" >
+                  <label for="info05chk02">신용</label>
+                </div>
+              </div>
+            </div>
+            <div class="flexBox">
+              <p class="dl">택배용지</p>
+              <div class="dr">
+                <div class="inputBox">
+                  <input type="radio" id="info05chk03" name="fare" checked>
+                  <label for="info05chk03">A</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info05chk04" name="fare" >
+                  <label for="info05chk04">B</label>
+                </div>
+                <div class="inputBox">
+                  <input type="radio" id="info06chk04" name="fare" >
+                  <label for="info06chk04">C</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   </div>
+   <script src="../asset/js/jquery-1.11.3.min.js"></script>
+   <script src="../asset/js/default.js"></script>
+</body>
+</html>

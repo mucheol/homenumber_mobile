@@ -299,45 +299,96 @@ textarea {width: 100%; height: 72px;padding: 8px 4px 6px 8px;}
 .popupLayer .popupInner button.success.active {background: #FF3210;  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15); }
 
 /* lookup */
-#lookup .title {
-  font-size: 28px;
-  line-height: 38px;
-  letter-spacing: -0.05em;
-  margin-top: 63px;
-  font-weight: 400;
+#lookup .title {  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  margin-top: 63px;  font-weight: 400;}
+#lookup .dateBox {  display: flex;  justify-content: space-between;  margin-top: 52px;}
+#lookup .dateBox .selectBox{  position: relative;  width: 100px;  height: 38px;  margin-top: 0;}
+#lookup .dateBox .selectBox img{  width: 10px;  margin-right: 2px;}
+#lookup .dateBox input{  width: 42px;  height: 38px;  margin-top: 0;  font-weight: 400;font-size: 12px;line-height: 16px;text-align: center;color: #535353;padding: 0;}
+#lookup .dateBox button{  width: 64px;  height: 38px;  background-color: #FF3210;  font-size: 12px;line-height: 16px;text-align: center;color: #FFFFFF;}
+#lookup .contents {  margin-top: 52px;}
+#lookup .contents .item{  padding-bottom: 26px;}
+#lookup .contents .item .itemNum{  font-weight: 700;  font-size: 24px;  line-height: 33px;  color: #535353;}
+#lookup .contents .item .itemBox{  position: relative;  display: grid;  grid-template: 1fr 1fr / 0.8fr 1.2fr 0.8fr;  margin-top: 20px;}
+#lookup .contents .item .itemBox::after{  position: absolute;  left: 0;  bottom: 0;  content: "";  width: 100%;  height: 2px;  background-color: #DBDBDB;}
+#lookup .contents .item .itemBox .itemTitle{  font-weight: 400;  font-size: 16px;  line-height: 22px;  color: #535353;  margin-bottom: 3px;}
+#lookup .contents .item .itemBox .itemCon01{  font-weight: 400;  font-size: 16px;  line-height: 22px;  color: #000000;  margin-bottom: 22px;}
+#lookup .contents .item .itemBox .itemCon02{  font-weight: 700;  font-size: 16px;  line-height: 22px;  color: #000000;}
+
+/* MYPAGE */
+#mypage .profileBox {  margin-top: 63px;  align-items: center;}
+#mypage .profileBox > img{  width: 72px;}
+#mypage .profileBox > div{  margin-left: 20px;}
+#mypage .profileBox > div .flexBox{  align-items: center;}
+#mypage .profileBox > div .flexBox > img{  width: 21px;}
+#mypage .profileBox > div .flexBox p{  width: 199px;  height: 20px;  position: relative;  font-size: 12px;  line-height: 20px;  letter-spacing: -0.05em;  color: #FFFFFF;  background-color: #000;  margin-left: 13px;  padding-left: 6px;}
+#mypage .profileBox > div .flexBox p img:nth-child(1){  position: absolute;  top: 50%;  left: -3px;  transform: translate(-50%,-50%);}
+#mypage .profileBox > div .flexBox p img:nth-child(2){  position: relative;  width: 8px;  margin-left: 4px;  margin-bottom: 2px;}
+#mypage .profileBox .profileName{  font-size: 24px;  line-height: 33px;  letter-spacing: -0.05em;  margin-top: 9px;}
+#mypage .tabBox{  margin-top: 41px;}
+#mypage .tabBox p:nth-child(1) a{  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  color: #DBDBDB;}
+#mypage .tabBox p{  font-size: 24px;  line-height: 33px;  letter-spacing: -0.05em;  margin-bottom: 32px;}
+#mypage .tabBox p img{  margin-left: 24px;}
+#mypage .tabBox p:nth-child(3) img{  margin-left: 45px;  margin-bottom: 5px;}
+#mypage .logoBox {  position: absolute;  left: 50%;  bottom: 23px;  transform: translate(-50%,-50%);  text-align: center;}
+#mypage .logoBox .flexBox{  display: flex;  justify-content: center;  margin-left: 10px;  font-size: 10px;line-height: 14px;text-align: center;letter-spacing: -0.05em;}
+#mypage .logoBox img{  width: 55px;  margin-top: 4px;}
+
+/* MYPAGE - INFO */
+#mypageInfo .title {  font-weight: 700;  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  margin-top: 65px;}
+#mypageInfo .subTitle {  font-weight: 700;  font-size: 24px;  line-height: 33px;  letter-spacing: -0.05em;  margin-top: 33px;}
+#mypageInfo form {  margin-top: 32px;}
+#mypageInfo .col {  margin-bottom: 8px;}
+#mypageInfo .col .dl {  display: flex;  align-items: center;  width: 125px;  font-weight: 400;  font-size: 16px;  line-height: 22px;  letter-spacing: -0.05em;  color: #535353;}
+#mypageInfo .col .dr {  width: 211px;  height: 40px;}
+#mypageInfo .col .dr input{  margin-top: 0;  width: 100%;  font-weight: 400;  font-size: 16px;  line-height: 22px;  color: #535353;}
+#mypageInfo .col .dr input::placeholder{  font-size: 12px;  line-height: 16px;    color: #DBDBDB;}
+#mypageInfo .col .dr input:read-only{  background: none;}
+#mypageInfo p.editBtn {  display: flex;  justify-content: center;  align-items: center;  width: 100%;  height: 38px;  background: #FF3210;  font-size: 16px;line-height: 22px;color: #FFFFFF;box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);margin-top: 138px;margin-bottom: 45px;}
+#mypageInfo p.editEndBtn {  display: none;  justify-content: center;  align-items: center;  width: 100%;  height: 38px;  background: #FF3210;  font-size: 16px;line-height: 22px;color: #FFFFFF;box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.15);margin-top: 138px;margin-bottom: 45px;}
+
+/* MYPAGE - COURIER MANAGEMENT */
+#courierManagement .title {  font-weight: 700;  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  margin-top: 65px;}
+#courierManagement .selCourier{  margin-top: 33px;}
+#courierManagement .selCourier .dl{  font-size: 24px;  line-height: 33px;  letter-spacing: -0.05em;}
+#courierManagement .selCourier .dr{  margin-left: 58px;}
+#courierManagement .selCourier .dr .selectBox{  margin-top: 0;  width: 174px;  height: 38px;}
+#courierManagement .selCourier .dr select{  width: 100%;  height: 100%;  font-size: 16px;  line-height: 22px;}
+#courierManagement .courierInfo .information{  display: none;}
+#courierManagement .courierInfo .subTitle{  font-size: 24px;  line-height: 33px;  letter-spacing: -0.05em;  margin-top: 72px;  margin-bottom: 28px;}
+#courierManagement .courierInfo .flexBox{  margin-bottom: 26px;}
+#courierManagement .courierInfo .dl{  width: 125px;  font-size: 16px;  line-height: 22px;  letter-spacing: -0.05em;  color: #535353;}
+#courierManagement .courierInfo .dr{  display: flex;  flex-wrap: wrap;  row-gap: 13px;  width: 200px;  font-size: 16px;  line-height: 22px;  color: #000000;}
+#courierManagement .courierInfo .flexBox .inputBox{  width: 90px;  margin-top: 0;  padding-left: 20px;}
+#courierManagement .courierInfo .flexBox input[type=checkBox]{  visibility: hidden;  width: 16px;}
+#courierManagement .courierInfo .flexBox .inputBox label{  position: relative;}
+#courierManagement .courierInfo .flexBox .inputBox label::before{  content: "";  position: absolute;  top: 50%;  left: -15px;  transform: translate(-50%,-50%);  display: block;  width: 16px;  height: 16px;  background-color: #DBDBDB;  border-radius: 50%;}
+#courierManagement .courierInfo .flexBox .inputBox input:checked + label::before{  background-color: #FF3210;}
+#courierManagement .courierInfo .flexBox .inputBox input:checked + label::after{  content: "";  position: absolute;  top: 50%;  left: -15px;  transform: translate(-50%,-50%);  display: block;  width: 8px;  height: 8px;  background-color: #fff;  border-radius: 50%;}
+
+/* MYPAGE - ETC */
+#mypageEtc .title {  font-weight: 700;  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  margin-top: 65px;}
+#mypageEtc .col {
+  margin-top: 43px;
 }
-#lookup .dateBox {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 52px;
+#mypageEtc .col .dl{
+  align-items: center;
+  width: 50%;
+  font-size: 16px;
+line-height: 22px;
+letter-spacing: -0.05em;
 }
-#lookup .dateBox .selectBox{
-  position: relative;
-  width: 100px;
-  height: 38px;
-  margin-top: 0;
+#mypageEtc .col .dl img{
+  width: 14px;
+  margin-right: 12px;
 }
-#lookup .dateBox .selectBox img{
+#mypageEtc .col:nth-child(3){
+  margin-top: 30px;
+}
+#mypageEtc .col:nth-child(3) .dl img{
   width: 10px;
-  margin-right: 2px;
+  margin-right: 14px;
 }
-#lookup .dateBox input{
-  width: 42px;
-  height: 38px;
-  margin-top: 0;
-  font-weight: 400;
-font-size: 12px;
-line-height: 16px;
-text-align: center;
-color: #535353;
-padding: 0;
-}
-#lookup .dateBox button{
-  width: 64px;
-  height: 38px;
-  background-color: #FF3210;
-  font-size: 12px;
-line-height: 16px;
-text-align: center;
-color: #FFFFFF;
+#mypageEtc .col .dr{
+  width: 50%;
+  text-align: right;
 }
