@@ -73,6 +73,11 @@ $(document).ready(function(){
     $('.editEndBtn').css('display','none')
     $('.editBtn').css('display','flex')
   })
+
+  // 마이페이지 알람 없애기
+  $('#mypage .closeAlert').on('click',function(){
+    $('#mypage .alertBox').css('display','none')
+  })
   
   // 마이페이지 택배사관리 셀렉트에따라 내용변환
   $('.courierInfo .info01').css('display','block')
