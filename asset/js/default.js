@@ -46,6 +46,18 @@ $(document).ready(function(){
     input.val('');
   })
 
+  // 주소찾기 탭 active 기능
+  $('.popupLayer .tab p').on('click',function(){
+    $('.popupLayer .tab p').removeClass('active')
+    $(this).addClass('active')
+  })
+
+  // 주소찾기 li active 기능
+  $('.resultBox ul li').on('click',function(){
+    $('.resultBox ul li').removeClass('active')
+    $(this).addClass('active')
+    $('button.addressSearch').addClass('active')
+  })
   
   
 });
