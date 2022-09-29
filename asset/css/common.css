@@ -204,7 +204,7 @@ textarea {width: 100%; height: 72px;padding: 8px 4px 6px 8px;}
 /* signup TOS */
 #signupTOS{  margin-top: 48px;}
 #signupTOS .logoBox {  width: 100%;  text-align: center;}
-#signupTOS .logoBox img{  width: 129px;}
+#signupTOS .logoBox img{  width: 141px;}
 #signupTOS .fakeBox {  margin-bottom: 8px;}
 #signupTOS .tosBox:nth-child(2) {  margin-top: 48px;}
 #signupTOS .tosBox:nth-child(3) {  margin-top: 40px;}
@@ -214,7 +214,7 @@ textarea {width: 100%; height: 72px;padding: 8px 4px 6px 8px;}
 /* signup */
 #signup{  margin-top: 48px; padding-bottom: 56px;}
 #signup .logoBox {  width: 100%;  text-align: center;}
-#signup .logoBox img{  width: 129px;}
+#signup .logoBox img{  width: 141px;}
 #signup .inputBox {margin-top: 24px;}
 #signup .inputBox > p{font-size: 16px;line-height: 22px;color: #191919;}
 #signup .phone_certiBox button{background-color: #FF3210;}
@@ -365,28 +365,9 @@ textarea {width: 100%; height: 72px;padding: 8px 4px 6px 8px;}
 
 /* MYPAGE - ETC */
 #mypageEtc .title {  font-weight: 700;  font-size: 28px;  line-height: 38px;  letter-spacing: -0.05em;  margin-top: 65px;}
-#mypageEtc .col {
-  margin-top: 43px;
-}
-#mypageEtc .col .dl{
-  align-items: center;
-  width: 50%;
-  font-size: 16px;
-line-height: 22px;
-letter-spacing: -0.05em;
-}
-#mypageEtc .col .dl img{
-  width: 14px;
-  margin-right: 12px;
-}
-#mypageEtc .col:nth-child(3){
-  margin-top: 30px;
-}
-#mypageEtc .col:nth-child(3) .dl img{
-  width: 10px;
-  margin-right: 14px;
-}
-#mypageEtc .col .dr{
-  width: 50%;
-  text-align: right;
-}
+#mypageEtc .col {  margin-top: 43px;}
+#mypageEtc .col .dl{  align-items: center;  width: 50%;  font-size: 16px;line-height: 22px;letter-spacing: -0.05em;}
+#mypageEtc .col .dl img{  width: 14px;  margin-right: 12px;}
+#mypageEtc .col:nth-child(3){  margin-top: 30px;}
+#mypageEtc .col:nth-child(3) .dl img{  width: 10px;  margin-right: 14px;}
+#mypageEtc .col .dr{  width: 50%;  text-align: right;}
